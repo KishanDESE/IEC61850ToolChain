@@ -14,7 +14,7 @@ print(milli_sec)
 
 def run_one_toolchain(folder,interface, timestamp, port,duration):
     cmd = 'sudo ./'+folder+'/goose_publisher_toolchain '+interface+' '+str(milli_sec+2)+' '+str(port)+' '+folder+' '+duration
-    print cmd;
+    print (cmd);
     os.system(cmd)
 
 processes = []
@@ -23,7 +23,7 @@ processes = []
 #args=[arg1,arg2]
 args=simulationParser.getArgs()
 #args=[arg1]
-print args
+print (args)
 
 
 for i in args:
